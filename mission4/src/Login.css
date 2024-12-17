@@ -1,0 +1,24 @@
+form{
+    font-weight: bold;
+}
+fieldset{
+    background-color: azure;
+    border-radius: 15px;
+}
+button{
+    border-radius: 15px;
+    background-color: lavender;
+    color: black;
+    margin: 10px;
+    outline-style:solid;
+    &:hover{
+        outline-color: transparent;
+        box-shadow: 0 0 0 3px steelblue;
+        transition: 0.7s;
+    }
+    &:focus-visible{
+        outline-color: transparent;
+        box-shadow: 0 0 0 3px steelblue;
+        transition: 0.7s;
+    }
+}
