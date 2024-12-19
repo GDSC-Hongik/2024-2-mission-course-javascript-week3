@@ -7,6 +7,7 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
+    // localStorage에서 토큰 확인
     const token = localStorage.getItem("authToken");
     if (token === "mock-jwt-token-12345") {
       setIsAuthenticated(true);
@@ -14,7 +15,7 @@ function App() {
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("authToken"); 
+    localStorage.removeItem("authToken"); // 로그아웃 시 토큰 삭제
     setIsAuthenticated(false);
   };
 
