@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Counter({ initialValue, step }) {
   const [count, setCount] = useState(initialValue);
@@ -9,7 +9,7 @@ function Counter({ initialValue, step }) {
 
   return (
     <div>
-      <h2>Counter: {count}</h2>
+      <h2>Count: {count}</h2>
       <button onClick={inc}>+{step}</button>
       <button onClick={reset}>Reset</button>
       <button onClick={dec}>-{step}</button>
