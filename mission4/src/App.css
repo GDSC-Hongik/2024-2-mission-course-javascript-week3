@@ -1,0 +1,36 @@
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0 20px;  
+  background-color: rgb(212, 210, 210);
+
+  width: 500px;
+  height: 300px;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.titleWrap {
+  font-size: 20px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.loginButton {
+  border-radius: 5px;
+}
+
+.logoutButton {
+  background-color: white;
+  width: 30%;
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-left: 160px
+}
